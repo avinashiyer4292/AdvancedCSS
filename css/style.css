@@ -38,3 +38,28 @@ body {
 .logo{
     height: 35px; /*width will be set automatically by browser*/
 }
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+}
+/*since span is an inline element like text, if we want it
+to occupy the entire space available , we set display: block*/
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.5px;
+}   
