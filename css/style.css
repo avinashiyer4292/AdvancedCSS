@@ -55,6 +55,13 @@ to occupy the entire space available , we set display: block*/
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+
+    /* set the animation here */
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* animation-delay: 0.5s;
+        animation-iteration-count: 3; */
 }
 
 .heading-primary-sub{
@@ -62,4 +69,29 @@ to occupy the entire space available , we set display: block*/
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.5px;
-}   
+}
+
+/*define the animation here*/
+
+/* browsers are usually optimized for opacity and transform*/
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    } /*when the animation started*/
+    100% {
+        opacity: 1;
+        tranform: translateX(0);
+    } /*when the animation ended*/
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    } /*when the animation started*/
+    100% {
+        opacity: 1;
+        tranform: translateX(0);
+    } /*when the animation ended*/
+}
