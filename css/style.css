@@ -1,0 +1,11 @@
+/* normalize to have every browser follow same style but browsers have become very flexible so not
+required*/
+
+
+/* Universal Selector*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
