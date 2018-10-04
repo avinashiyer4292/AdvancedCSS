@@ -9,3 +9,11 @@ required*/
     padding: 0;
     box-sizing: border-box;
 }
+
+/* 1. Setting font family in body so that child elements can inherit */
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7; /* means its 1.7 times bigger than predefined line height*/
+}
