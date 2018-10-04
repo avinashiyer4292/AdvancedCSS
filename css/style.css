@@ -21,10 +21,20 @@ body {
 }
 
 .header {
+    position: relative;
     height: 95vh; /* 95% of veiwport height , 100% means same as parent*/
     background-image: linear-gradient(to right bottom, #7fed61c5, #28b485c2) ,  url(../img/scenery.jpeg); 
     background-size: cover;
     background-position: center;
     /*clip-path*/
-    clip-path: polygon(0 0,  100% 50%, 100% 50% , 0 100% );/*polygon(0 0 , 100% 0, 100% 75%, 0 100%);*/
+    clip-path: polygon(0 0,  100% 0, 100% 75vh , 0 100% );/*polygon(0 0 , 100% 0, 100% 75%, 0 100%);*/
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.logo{
+    height: 35px; /*width will be set automatically by browser*/
 }
